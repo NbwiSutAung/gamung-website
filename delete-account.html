@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gămung · Delete account</title>
+<meta name="description" content="How to delete your Gămung account and data.">
+<meta name="theme-color" content="#14b8a6">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="Gămung · Delete account">
+<meta property="og:description" content="How to delete your Gămung account and data.">
+<meta property="og:image" content="assets/icon-512.png">
+<style>
+:root{--bg:#f6f8f8;--card:#fff;--text:#0f172a;--muted:#5b6474;--brand:#14b8a6;
+--brand-dark:#0f766e;--tint:#e6f7f5;--amber:#f59e0b;--amber-tint:#fdf3e1;
+--line:#e3e8ea;--shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1214;
+--card:#151c1f;--text:#e8eef0;--muted:#9aa6ad;--line:#26313a;--tint:#12312e;
+--amber-tint:#33270f;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Noto Sans Myanmar","Myanmar Text",sans-serif}
+a{color:var(--brand-dark)}
+@media (prefers-color-scheme:dark){a{color:#2dd4bf}}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;
+flex-wrap:wrap;padding:22px 0 10px}
+.logo{display:block;height:30px;width:auto}
+@media (prefers-color-scheme:dark){.logo{filter:brightness(1.15)}}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.on{color:var(--brand);font-weight:600}
+.langs{display:flex;gap:6px}
+.langs button{border:1px solid var(--line);background:var(--card);color:var(--text);
+border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.langs button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{padding:48px 0 32px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 16px;
+letter-spacing:-.02em}
+.hero p{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:640px;
+margin:0 auto 28px}
+.stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--text);
+color:var(--bg);text-decoration:none;border-radius:14px;padding:12px 20px;
+min-width:200px;justify-content:center;font-weight:600}
+.store small{display:block;font-weight:400;font-size:12px;opacity:.75;line-height:1.2}
+.store span.big{display:block;font-size:17px;line-height:1.25}
+.store.soon{background:var(--card);color:var(--muted);border:1px dashed var(--line);
+cursor:default}
+.store svg{width:26px;height:26px;flex:none;fill:currentColor}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+section{padding:32px 0}
+h2.sec{font-size:clamp(22px,3.6vw,30px);margin:0 0 8px;text-align:center}
+p.sec{color:var(--muted);text-align:center;margin:0 auto 28px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--tint);
+display:grid;place-items:center;color:var(--brand)}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;
+stroke-linecap:round;stroke-linejoin:round}
+.band{background:var(--amber-tint);border:1px solid rgba(245,158,11,.35);
+border-radius:24px;padding:28px;display:flex;gap:20px;align-items:center;
+flex-wrap:wrap;justify-content:space-between}
+.band h3{margin:0 0 4px;font-size:20px}
+.band p{margin:0;color:var(--muted)}
+.tick{width:48px;height:48px;flex:none;color:var(--amber)}
+.btn{display:inline-block;background:var(--brand);color:#fff!important;
+text-decoration:none;border-radius:999px;padding:11px 22px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--brand-dark)!important;
+border:1.5px solid var(--brand)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+margin:8px 0 8px}
+.plan{text-align:center;position:relative}
+.plan .len{color:var(--muted);font-weight:600}
+.plan .price{font-size:34px;font-weight:800;margin:6px 0 2px;letter-spacing:-.01em}
+.plan .per{color:var(--muted);font-size:14px}
+.plan.best{border:2px solid var(--amber)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+background:var(--amber);color:#fff;border-radius:999px;padding:2px 12px;
+font-size:13px;font-weight:700;white-space:nowrap}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:16px 16px 16px 60px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;
+width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--brand);
+display:grid;place-items:center;font-weight:700}
+ul.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.ticks li{padding-left:30px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:.45em;width:14px;
+height:8px;border-left:2.5px solid var(--brand);border-bottom:2.5px solid var(--brand);
+transform:rotate(-45deg)}
+article{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:28px 24px;margin:8px 0 24px}
+article h1{margin:0 0 4px;font-size:28px;line-height:1.3}
+article h2{font-size:19px;margin:28px 0 8px}
+.date{color:var(--muted);font-size:14px;margin:0 0 12px}
+article ul{padding-left:22px;margin:8px 0}article li{margin:6px 0}
+.brandline{font-weight:800;font-size:22px;color:var(--brand)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;
+color:var(--muted);font-size:14px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:8px}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+@media (max-width:520px){.store{min-width:0;width:100%}.band{padding:22px}
+article{padding:22px 18px}}
+</style></head><body><div class="wrap narrow"><header><img class="logo" src="assets/wordmark.png" alt="Gămung"><nav><a href="privacy.html" class=""><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html" class=""><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html" class=""><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html" class="on"><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></nav><div class="langs"><button data-l="en">English</button><button data-l="my">မြန်မာ</button></div></header></div><main class="wrap narrow"><article data-lang="en"><h1>Delete your Gămung account</h1>
+<p class="date">You can delete your account and its data at any time.</p>
+<h2>In the app (fastest)</h2>
+<ul><li>Open Gămung and go to <strong>Settings &gt; Account &amp; Security &gt; Delete account</strong>.</li>
+<li>Your account is deleted right away.</li>
+<li>If you own a community with other members, hand it to someone else first — the app shows you how.</li></ul>
+<h2>Without the app</h2>
+<ul><li>Email <a href="mailto:gamung.app@gmail.com?subject=Delete%20my%20Gămung%20account">gamung.app@gmail.com</a> from the email address you signed up with, with the subject <strong>"Delete my Gămung account"</strong>.</li>
+<li>We'll confirm it's you and delete the account, usually within a few days, and let you know when it's done.</li></ul>
+<h2>What gets deleted</h2>
+<ul><li>Your profile, posts, comments, listings, jobs, job applications, messages and uploaded photos and files are deleted right away.</li>
+<li>Communities you own alone are deleted too.</li></ul>
+<h2>What we may keep</h2>
+<ul><li>To keep the community safe and meet legal duties, we may keep: copies of content our team removed for breaking the rules (with the reason); reports and the team's moderation records; and copies of your support messages and our replies. We keep these only as long as they're needed for safety or legal reasons.</li></ul>
+<p>More detail is in our <a href="privacy.html">Privacy Policy</a>.</p></article><article data-lang="my" lang="my"><h1>Gămung အကောင့် ဖျက်ရန်</h1>
+<p class="date">သင့်အကောင့်နှင့် အချက်အလက်များကို အချိန်မရွေး ဖျက်နိုင်ပါသည်။</p>
+<h2>အက်ပ်ထဲတွင် (အမြန်ဆုံး)</h2>
+<ul><li>Gămung ကို ဖွင့်ပြီး <strong>ဆက်တင်များ &gt; အကောင့်နှင့် လုံခြုံရေး &gt; အကောင့် ဖျက်ရန်</strong> သို့ သွားပါ။</li>
+<li>သင့်အကောင့်ကို ချက်ချင်း ဖျက်ပါမည်။</li>
+<li>အခြားအဖွဲ့ဝင်များ ရှိသော အသိုင်းအဝိုင်းကို ပိုင်ဆိုင်ထားပါက အခြားသူတစ်ဦးထံ ဦးစွာ လွှဲပေးပါ — အက်ပ်က လမ်းညွှန်ပေးပါမည်။</li></ul>
+<h2>အက်ပ်မရှိဘဲ</h2>
+<ul><li>စာရင်းသွင်းခဲ့သော အီးမေးလ်မှ <a href="mailto:gamung.app@gmail.com?subject=Delete%20my%20Gămung%20account">gamung.app@gmail.com</a> သို့ <strong>"Delete my Gămung account"</strong> ခေါင်းစဉ်ဖြင့် အီးမေးလ် ပို့ပါ။</li>
+<li>သင်ဖြစ်ကြောင်း အတည်ပြုပြီး များသောအားဖြင့် ရက်အနည်းငယ်အတွင်း အကောင့်ကို ဖျက်ကာ ပြီးဆုံးကြောင်း အကြောင်းကြားပါမည်။</li></ul>
+<h2>ဖျက်မည့် အရာများ</h2>
+<ul><li>သင့်ပရိုဖိုင်၊ ပို့စ်၊ မှတ်ချက်၊ ရောင်းစရာ၊ အလုပ်ခေါ်စာ၊ အလုပ်လျှောက်လွှာ၊ မက်ဆေ့နှင့် တင်ထားသော ဓာတ်ပုံ၊ ဖိုင်များကို ချက်ချင်း ဖျက်ပါမည်။</li>
+<li>သင်တစ်ဦးတည်း ပိုင်ဆိုင်သော အသိုင်းအဝိုင်းများကိုလည်း ဖျက်ပါမည်။</li></ul>
+<h2>ဆက်လက် သိမ်းထားနိုင်သော အရာများ</h2>
+<ul><li>အသိုင်းအဝိုင်း လုံခြုံရေးနှင့် ဥပဒေဆိုင်ရာ တာဝန်များအတွက် — စည်းကမ်းချိုးဖောက်၍ ကျွန်ုပ်တို့အဖွဲ့က ဖယ်ရှားခဲ့သော အကြောင်းအရာ မိတ္တူများ (အကြောင်းပြချက်နှင့်အတူ)၊ တိုင်ကြားချက်များနှင့် အဖွဲ့၏ စစ်ဆေးမှု မှတ်တမ်းများ၊ သင့် Support မက်ဆေ့များနှင့် ကျွန်ုပ်တို့၏ အဖြေ မိတ္တူများကို သိမ်းထားနိုင်ပါသည်။ လုံခြုံရေး သို့မဟုတ် ဥပဒေအရ လိုအပ်သရွေ့သာ သိမ်းထားပါသည်။</li></ul>
+<p>အသေးစိတ်ကို <a href="privacy.html">ကိုယ်ရေးအချက်အလက် မူဝါဒ</a>တွင် ဖတ်ရှုနိုင်ပါသည်။</p></article></main><div class="wrap narrow"><footer><div class="links"><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html"><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html"><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html"><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></div>Gămung · <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></footer></div><script>
+const pick=l=>{document.querySelectorAll('[data-lang]').forEach(e=>e.hidden=e.dataset.lang!==l);
+document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}};
+let l='en';try{l=localStorage.getItem('lang')||(navigator.language||'').startsWith('my')&&'my'||'en'}catch(e){}
+if(location.hash==='#my')l='my';if(location.hash==='#en')l='en';
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>pick(b.dataset.l));pick(l);
+</script></body></html>

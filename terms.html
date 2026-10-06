@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gămung · Terms of Use</title>
+<meta name="description" content="Gămung Terms of Use">
+<meta name="theme-color" content="#14b8a6">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="Gămung · Terms of Use">
+<meta property="og:description" content="Gămung Terms of Use">
+<meta property="og:image" content="assets/icon-512.png">
+<style>
+:root{--bg:#f6f8f8;--card:#fff;--text:#0f172a;--muted:#5b6474;--brand:#14b8a6;
+--brand-dark:#0f766e;--tint:#e6f7f5;--amber:#f59e0b;--amber-tint:#fdf3e1;
+--line:#e3e8ea;--shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1214;
+--card:#151c1f;--text:#e8eef0;--muted:#9aa6ad;--line:#26313a;--tint:#12312e;
+--amber-tint:#33270f;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Noto Sans Myanmar","Myanmar Text",sans-serif}
+a{color:var(--brand-dark)}
+@media (prefers-color-scheme:dark){a{color:#2dd4bf}}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;
+flex-wrap:wrap;padding:22px 0 10px}
+.logo{display:block;height:30px;width:auto}
+@media (prefers-color-scheme:dark){.logo{filter:brightness(1.15)}}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.on{color:var(--brand);font-weight:600}
+.langs{display:flex;gap:6px}
+.langs button{border:1px solid var(--line);background:var(--card);color:var(--text);
+border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.langs button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{padding:48px 0 32px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 16px;
+letter-spacing:-.02em}
+.hero p{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:640px;
+margin:0 auto 28px}
+.stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--text);
+color:var(--bg);text-decoration:none;border-radius:14px;padding:12px 20px;
+min-width:200px;justify-content:center;font-weight:600}
+.store small{display:block;font-weight:400;font-size:12px;opacity:.75;line-height:1.2}
+.store span.big{display:block;font-size:17px;line-height:1.25}
+.store.soon{background:var(--card);color:var(--muted);border:1px dashed var(--line);
+cursor:default}
+.store svg{width:26px;height:26px;flex:none;fill:currentColor}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+section{padding:32px 0}
+h2.sec{font-size:clamp(22px,3.6vw,30px);margin:0 0 8px;text-align:center}
+p.sec{color:var(--muted);text-align:center;margin:0 auto 28px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--tint);
+display:grid;place-items:center;color:var(--brand)}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;
+stroke-linecap:round;stroke-linejoin:round}
+.band{background:var(--amber-tint);border:1px solid rgba(245,158,11,.35);
+border-radius:24px;padding:28px;display:flex;gap:20px;align-items:center;
+flex-wrap:wrap;justify-content:space-between}
+.band h3{margin:0 0 4px;font-size:20px}
+.band p{margin:0;color:var(--muted)}
+.tick{width:48px;height:48px;flex:none;color:var(--amber)}
+.btn{display:inline-block;background:var(--brand);color:#fff!important;
+text-decoration:none;border-radius:999px;padding:11px 22px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--brand-dark)!important;
+border:1.5px solid var(--brand)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+margin:8px 0 8px}
+.plan{text-align:center;position:relative}
+.plan .len{color:var(--muted);font-weight:600}
+.plan .price{font-size:34px;font-weight:800;margin:6px 0 2px;letter-spacing:-.01em}
+.plan .per{color:var(--muted);font-size:14px}
+.plan.best{border:2px solid var(--amber)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+background:var(--amber);color:#fff;border-radius:999px;padding:2px 12px;
+font-size:13px;font-weight:700;white-space:nowrap}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:16px 16px 16px 60px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;
+width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--brand);
+display:grid;place-items:center;font-weight:700}
+ul.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.ticks li{padding-left:30px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:.45em;width:14px;
+height:8px;border-left:2.5px solid var(--brand);border-bottom:2.5px solid var(--brand);
+transform:rotate(-45deg)}
+article{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:28px 24px;margin:8px 0 24px}
+article h1{margin:0 0 4px;font-size:28px;line-height:1.3}
+article h2{font-size:19px;margin:28px 0 8px}
+.date{color:var(--muted);font-size:14px;margin:0 0 12px}
+article ul{padding-left:22px;margin:8px 0}article li{margin:6px 0}
+.brandline{font-weight:800;font-size:22px;color:var(--brand)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;
+color:var(--muted);font-size:14px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:8px}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+@media (max-width:520px){.store{min-width:0;width:100%}.band{padding:22px}
+article{padding:22px 18px}}
+</style></head><body><div class="wrap narrow"><header><img class="logo" src="assets/wordmark.png" alt="Gămung"><nav><a href="privacy.html" class=""><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html" class="on"><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html" class=""><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html" class=""><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></nav><div class="langs"><button data-l="en">English</button><button data-l="my">မြန်မာ</button></div></header></div><main class="wrap narrow"><article data-lang="en" lang="en"><h1>Terms of Use</h1>
+<p class="date">Effective: 5 October 2026</p>
+<p>Welcome to Gămung. These terms are the agreement between you and the team that runs Gămung (&quot;we&quot;, &quot;us&quot;). By creating an account or using the app, you agree to them and to our Privacy Policy. If you don&#x27;t agree, please don&#x27;t use Gămung.</p>
+<h2>1. Who can use Gămung</h2>
+<ul>
+<li>You must be at least 13 years old.</li>
+<li>Selling in Gămung Mart, posting jobs and applying to jobs are only for people 18 and over.</li>
+<li>Give a true birth date and don&#x27;t create an account for someone else without their permission.</li>
+<li>Don&#x27;t use another account to get around a block, a removal or a suspension.</li>
+</ul>
+<h2>2. Your account</h2>
+<ul>
+<li>You&#x27;re responsible for what happens on your account. Keep your password and sign-in codes to yourself.</li>
+<li><strong>Gămung will never ask for your password, sign-in codes or a payment in a message.</strong> Anyone who does is not us.</li>
+<li>You can delete your account at any time from Settings &gt; Account &amp; Security.</li>
+</ul>
+<h2>3. Your content</h2>
+<ul>
+<li>You own what you post. By posting on Gămung, you give us permission to store, show and share it inside the app (and in links people share from it) so the app can work. This permission ends when you delete the content or your account, except for copies we keep as described in the Privacy Policy.</li>
+<li>Only post things you have the right to share.</li>
+<li>You&#x27;re responsible for what you post, including anonymous posts. Anonymous posts are hidden from other users, but not from the Gămung team.</li>
+</ul>
+<h2>4. Community rules</h2>
+<p>Gămung is for neighbours, buyers, sellers, job seekers and communities to help each other. Don&#x27;t use it to:</p>
+<ul>
+<li><strong>Scam or defraud:</strong> fake listings, fake jobs, asking for upfront fees or deposits under false pretences, pyramid schemes, or fake prizes.</li>
+<li><strong>Harass or threaten:</strong> bullying, threats, stalking, or targeting someone repeatedly.</li>
+<li><strong>Spread hate:</strong> attacking people for their ethnicity, religion, nationality, gender, disability or similar.</li>
+<li><strong>Share sexual or violent content:</strong> nudity, sexual content, or graphic violence. Any sexual content involving minors is strictly forbidden and will be reported to the authorities.</li>
+<li><strong>Sell or promote illegal or dangerous things:</strong> drugs, weapons, stolen goods, counterfeit items, wildlife products, or anything illegal where you or the buyer live.</li>
+<li><strong>Post discriminatory or misleading jobs:</strong> jobs that discriminate unfairly, hide the real work or pay, or are a front for trafficking or exploitation.</li>
+<li><strong>Impersonate others:</strong> pretending to be another person, business, or Gămung itself.</li>
+<li><strong>Share private information:</strong> posting someone&#x27;s phone number, address, ID documents or private photos without their permission.</li>
+<li><strong>Spam or manipulate:</strong> repeated posts, mass messages, fake accounts, or fake reactions and votes.</li>
+<li><strong>Break the app:</strong> hacking, scraping, or trying to get around security or age limits.</li>
+</ul>
+<h2>5. Gămung Mart and Gămung Jobs</h2>
+<ul>
+<li>Gămung only connects people. We are not a party to any sale, purchase, job or agreement between users, and we don&#x27;t handle payments.</li>
+<li>Check items, people and jobs carefully. Meet in safe public places, and never send money or ID documents to someone you haven&#x27;t verified.</li>
+<li>Sellers must describe items honestly and keep their listing status (Available, Reserved, Sold) up to date.</li>
+<li>Employers must describe jobs honestly and treat applicants&#x27; information (including résumés) privately, using it only for that job.</li>
+</ul>
+<h2>6. Communities</h2>
+<ul>
+<li>Community owners, admins and moderators help keep their communities on topic and may remove posts or members there. They must still follow these terms.</li>
+<li>Private communities are hidden from other users. Nobody at Gămung browses them — including our administrators. When a post, comment or community there is reported, the team can view what was reported (with its comments, for context) while the report is being handled and for a short time after. Every such view is recorded, and the team can&#x27;t post there.</li>
+</ul>
+<h2>7. Gămung Verified, the official account and the Gămung team</h2>
+<ul>
+<li>The Gămung Verified badge (amber tick) means the Gămung team checked the account. It lasts for a set time, and we can remove it if the account breaks these terms.</li>
+<li>The Gămung Team account — with the teal tick and the &quot;G&quot; seal on its photo — is the only official Gămung account.</li>
+<li>Members of the Gămung team also have ordinary personal accounts. When they act for Gămung, it reaches you as <strong>Gămung Team</strong> or <strong>Gămung Support</strong> inside the app — never as a personal message asking for your password, sign-in codes or money.</li>
+</ul>
+<h2>8. How we enforce these rules</h2>
+<ul>
+<li><strong>Reporting:</strong> anyone can report a post, comment, person, listing, job or community from its ⋯ menu. Our team reviews every report.</li>
+</ul>
+<p>Depending on how serious it is and how often it has happened, we can:</p>
+<ul>
+<li><strong>Remove content</strong> that breaks the rules. You&#x27;ll get a notice with the rule it broke.</li>
+<li><strong>Warning:</strong> a notice that names the rule. Your account keeps working as normal.</li>
+<li><strong>Temporary suspension:</strong> from 1 day up to 1 year. It ends by itself on the date shown to you.</li>
+<li><strong>Permanent suspension:</strong> until the team decides to lift it.</li>
+<li>We usually go step by step. For serious harm — such as sexual content involving minors, trafficking or exploitation, credible threats of violence, or large scams — we may suspend permanently straight away and report it to the authorities.</li>
+<li><strong>While suspended,</strong> you can&#x27;t sign in, post, comment, message, follow or apply, and your Mart listings and jobs are hidden from everyone. Nothing is deleted: when a temporary suspension ends, your account, listings and jobs come back as they were. Your existing posts stay visible.</li>
+<li><strong>Records:</strong> we keep a copy of removed content, and a record of warnings and suspensions, for safety and appeals, as described in the Privacy Policy. If we made a mistake we can restore removed content.</li>
+<li><strong>Appeals:</strong> if you think we got it wrong, tap the notice in Notifications and choose <strong>Contact support</strong>, or write to Gămung Support or <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a>. A person on our team will look at it again.</li>
+<li>Don&#x27;t use another account to get around a warning, a removal or a suspension — that can lead to permanent suspension of all your accounts.</li>
+</ul>
+<h2>9. Disclaimers</h2>
+<ul>
+<li>Gămung is provided &quot;as is&quot;. We work hard to keep it running and safe, but we can&#x27;t promise it will always be available or free of errors.</li>
+<li>We aren&#x27;t responsible for what users post or do, for deals or jobs between users, or for losses that come from them, as far as the law allows.</li>
+</ul>
+<h2>10. Changes</h2>
+<p>We may update the app and these terms. If we make important changes, we&#x27;ll update the date at the top and tell you in the app. If you keep using Gămung after that, you accept the new terms.</p>
+<h2>11. Contact</h2>
+<p>Email: <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></p>
+<p>In the app: Settings &gt; Help &amp; Support</p></article><article data-lang="my" lang="my"><h1>အသုံးပြုမှု စည်းကမ်းချက်များ</h1>
+<p class="date">အကျိုးသက်ရောက်သည့်ရက်: ၂၀၂၆ ခုနှစ် အောက်တိုဘာ ၅ ရက်</p>
+<p>Gămung မှ ကြိုဆိုပါသည်။ ဤစည်းကမ်းချက်များသည် သင်နှင့် Gămung ကို လည်ပတ်သည့်အဖွဲ့ (&quot;ကျွန်ုပ်တို့&quot;) ကြားရှိ သဘောတူညီချက် ဖြစ်ပါသည်။ အကောင့်ဖွင့်ခြင်း သို့မဟုတ် အက်ပ်ကို အသုံးပြုခြင်းဖြင့် ဤစည်းကမ်းချက်များနှင့် ကိုယ်ရေးအချက်အလက် မူဝါဒကို သဘောတူပါသည်။ သဘောမတူပါက Gămung ကို အသုံးမပြုပါနှင့်။</p>
+<h2>၁။ Gămung ကို မည်သူ သုံးနိုင်သနည်း</h2>
+<ul>
+<li>အနည်းဆုံး အသက် ၁၃ နှစ် ပြည့်ရပါမည်။</li>
+<li>Gămung Mart တွင် ရောင်းချခြင်း၊ အလုပ်ခေါ်စာတင်ခြင်းနှင့် အလုပ်လျှောက်ခြင်းတို့မှာ အသက် ၁၈ နှစ်နှင့်အထက်အတွက်သာ ဖြစ်ပါသည်။</li>
+<li>မှန်ကန်သော မွေးသက္ကရာဇ်ကို ထည့်ပါ။ ခွင့်ပြုချက်မရှိဘဲ အခြားသူအတွက် အကောင့်မဖွင့်ပါနှင့်။</li>
+<li>ပိတ်ဆို့ခံရမှု၊ ဖယ်ရှားခံရမှု သို့မဟုတ် ဆိုင်းငံ့ခံရမှုကို ရှောင်ရန် အခြားအကောင့်ကို မသုံးပါနှင့်။</li>
+</ul>
+<h2>၂။ သင်၏အကောင့်</h2>
+<ul>
+<li>သင့်အကောင့်တွင် ဖြစ်ပျက်သမျှအတွက် သင်တာဝန်ရှိပါသည်။ စကားဝှက်နှင့် ဝင်ရောက်ရန်ကုဒ်များကို မည်သူ့ကိုမျှ မပေးပါနှင့်။</li>
+<li><strong>Gămung သည် မက်ဆေ့ထဲတွင် သင့်စကားဝှက်၊ ဝင်ရောက်ရန်ကုဒ် သို့မဟုတ် ငွေပေးချေမှုကို ဘယ်တော့မှ မတောင်းပါ။</strong> ထိုသို့တောင်းသူသည် ကျွန်ုပ်တို့ မဟုတ်ပါ။</li>
+<li>ဆက်တင်များ &gt; အကောင့်နှင့် လုံခြုံရေး မှ အကောင့်ကို အချိန်မရွေး ဖျက်နိုင်ပါသည်။</li>
+</ul>
+<h2>၃။ သင်တင်သည့် အကြောင်းအရာများ</h2>
+<ul>
+<li>သင်တင်သည့်အရာများကို သင်ပိုင်ဆိုင်ပါသည်။ Gămung တွင် တင်ခြင်းဖြင့် အက်ပ်လည်ပတ်နိုင်ရန် ၎င်းတို့ကို အက်ပ်ထဲတွင် (နှင့် အက်ပ်မှ မျှဝေသည့် လင့်ခ်များတွင်) သိမ်းဆည်း၊ ပြသ၊ မျှဝေခွင့်ကို ကျွန်ုပ်တို့အား ပေးပါသည်။ ကိုယ်ရေးအချက်အလက် မူဝါဒတွင် ဖော်ပြထားသော သိမ်းဆည်းထားသည့် မိတ္တူများမှလွဲ၍ အကြောင်းအရာ သို့မဟုတ် အကောင့်ကို ဖျက်သည့်အခါ ဤခွင့်ပြုချက် ပြီးဆုံးပါသည်။</li>
+<li>မျှဝေခွင့်ရှိသည့် အရာများကိုသာ တင်ပါ။</li>
+<li>အမည်မဖော်သော ပို့စ်များ အပါအဝင် သင်တင်သည့်အရာများအတွက် သင်တာဝန်ရှိပါသည်။ အမည်မဖော်သော ပို့စ်များကို အခြားအသုံးပြုသူများ မမြင်ရသော်လည်း Gămung အဖွဲ့ထံမှ မဖုံးကွယ်ထားပါ။</li>
+</ul>
+<h2>၄။ အသိုင်းအဝိုင်း စည်းမျဉ်းများ</h2>
+<p>Gămung သည် အိမ်နီးချင်းများ၊ ဝယ်သူ ရောင်းသူများ၊ အလုပ်ရှာသူများနှင့် အသိုင်းအဝိုင်းများ အချင်းချင်း ကူညီရန် ဖြစ်ပါသည်။ အောက်ပါတို့အတွက် မသုံးပါနှင့်:</p>
+<ul>
+<li><strong>လိမ်လည်ခြင်း:</strong> အတုကြော်ငြာ၊ အတုအလုပ်ခေါ်စာ၊ မမှန်သော အကြောင်းပြချက်ဖြင့် ကြိုတင်ကြေး သို့မဟုတ် စရံငွေတောင်းခြင်း၊ ပိရမစ်စနစ်များ သို့မဟုတ် အတုဆုလက်ဆောင်များ။</li>
+<li><strong>နှောင့်ယှက်ခြင်း သို့မဟုတ် ခြိမ်းခြောက်ခြင်း:</strong> အနိုင်ကျင့်ခြင်း၊ ခြိမ်းခြောက်ခြင်း၊ နောက်ယောင်ခံလိုက်ခြင်း သို့မဟုတ် တစ်ဦးတည်းကို ထပ်ခါထပ်ခါ ပစ်မှတ်ထားခြင်း။</li>
+<li><strong>အမုန်းစကား ဖြန့်ခြင်း:</strong> လူမျိုး၊ ဘာသာ၊ နိုင်ငံသား၊ ကျား/မ၊ မသန်စွမ်းမှု စသည်တို့ကြောင့် တိုက်ခိုက်ခြင်း။</li>
+<li><strong>လိင်ဆိုင်ရာ သို့မဟုတ် အကြမ်းဖက် အကြောင်းအရာများ:</strong> အဝတ်မဲ့ပုံ၊ လိင်ဆိုင်ရာ အကြောင်းအရာ သို့မဟုတ် ရက်စက်သော အကြမ်းဖက်မှု။ ကလေးငယ်များ ပါဝင်သည့် လိင်ဆိုင်ရာ အကြောင်းအရာကို လုံးဝ တားမြစ်ပြီး အာဏာပိုင်များထံ တိုင်ကြားပါမည်။</li>
+<li><strong>တရားမဝင် သို့မဟုတ် အန္တရာယ်ရှိသောအရာများ ရောင်းချ/ကြော်ငြာခြင်း:</strong> မူးယစ်ဆေး၊ လက်နက်၊ ခိုးရာပါပစ္စည်း၊ အတုပစ္စည်း၊ တောရိုင်းတိရစ္ဆာန် ထွက်ကုန်များ သို့မဟုတ် သင် သို့မဟုတ် ဝယ်သူနေထိုင်ရာ၌ တရားမဝင်သည့် မည်သည့်အရာမဆို။</li>
+<li><strong>ခွဲခြားဆက်ဆံသော သို့မဟုတ် လှည့်စားသော အလုပ်ခေါ်စာများ:</strong> မတရားခွဲခြားသော၊ အမှန်တကယ် အလုပ်နှင့် လစာကို ဖုံးကွယ်သော သို့မဟုတ် လူကုန်ကူးမှု/ခေါင်းပုံဖြတ်မှုအတွက် အရှေ့ဖုံးဖြစ်သော အလုပ်များ။</li>
+<li><strong>အခြားသူအယောင်ဆောင်ခြင်း:</strong> အခြားလူ၊ လုပ်ငန်း သို့မဟုတ် Gămung ကိုယ်တိုင်အဖြစ် ဟန်ဆောင်ခြင်း။</li>
+<li><strong>သီးသန့်အချက်အလက် မျှဝေခြင်း:</strong> ခွင့်ပြုချက်မရှိဘဲ အခြားသူ၏ ဖုန်းနံပါတ်၊ လိပ်စာ၊ မှတ်ပုံတင်/ID စာရွက်စာတမ်း သို့မဟုတ် ကိုယ်ပိုင်ဓာတ်ပုံများ တင်ခြင်း။</li>
+<li><strong>Spam သို့မဟုတ် လှည့်ဖြားခြင်း:</strong> ထပ်ခါထပ်ခါတင်ခြင်း၊ အစုလိုက် မက်ဆေ့ပို့ခြင်း၊ အကောင့်အတုများ သို့မဟုတ် တုံ့ပြန်မှု/မဲ အတုများ။</li>
+<li><strong>အက်ပ်ကို ဖျက်ဆီးခြင်း:</strong> hack လုပ်ခြင်း၊ ဒေတာများ အလိုအလျောက် ဆွဲယူခြင်း သို့မဟုတ် လုံခြုံရေး/အသက်ကန့်သတ်ချက်များကို ကျော်ရန် ကြိုးစားခြင်း။</li>
+</ul>
+<h2>၅။ Gămung Mart နှင့် Gămung Jobs</h2>
+<ul>
+<li>Gămung သည် လူများကို ချိတ်ဆက်ပေးရုံသာ ဖြစ်ပါသည်။ အသုံးပြုသူများကြားရှိ ရောင်းဝယ်မှု၊ အလုပ် သို့မဟုတ် သဘောတူညီချက်များတွင် ကျွန်ုပ်တို့ ပါဝင်ခြင်းမရှိဘဲ ငွေပေးချေမှုများကိုလည်း ကိုင်တွယ်ခြင်း မရှိပါ။</li>
+<li>ပစ္စည်း၊ လူနှင့် အလုပ်များကို သေချာစစ်ဆေးပါ။ လုံခြုံသော အများပြည်သူနေရာတွင် တွေ့ဆုံပြီး မစစ်ဆေးရသေးသူထံ ငွေ သို့မဟုတ် ID စာရွက်စာတမ်းများ ဘယ်တော့မှ မပို့ပါနှင့်။</li>
+<li>ရောင်းသူများသည် ပစ္စည်းများကို ရိုးသားစွာ ဖော်ပြပြီး ကြော်ငြာအခြေအနေ (ရနိုင်သည်၊ ကြိုတင်မှာထားပြီး၊ ရောင်းပြီး) ကို အမြဲ နောက်ဆုံးအခြေအနေအတိုင်း ထားရပါမည်။</li>
+<li>အလုပ်ရှင်များသည် အလုပ်များကို ရိုးသားစွာ ဖော်ပြပြီး လျှောက်ထားသူများ၏ အချက်အလက် (ကိုယ်ရေးရာဇဝင် အပါအဝင်) ကို သီးသန့်ထားကာ ထိုအလုပ်အတွက်သာ အသုံးပြုရပါမည်။</li>
+</ul>
+<h2>၆။ အသိုင်းအဝိုင်းများ</h2>
+<ul>
+<li>အသိုင်းအဝိုင်း ပိုင်ရှင်၊ အက်ဒမင်နှင့် မော်ဒရေတာများက ၎င်းတို့၏ အသိုင်းအဝိုင်းကို ခေါင်းစဉ်နှင့်ကိုက်ညီအောင် ထိန်းပေးပြီး ထိုနေရာရှိ ပို့စ် သို့မဟုတ် အဖွဲ့ဝင်များကို ဖယ်ရှားနိုင်ပါသည်။ ၎င်းတို့လည်း ဤစည်းကမ်းချက်များကို လိုက်နာရပါမည်။</li>
+<li>သီးသန့် အသိုင်းအဝိုင်းများကို အခြားအသုံးပြုသူများ မမြင်ရပါ။ Gămung မှ မည်သူမျှ — အက်ဒမင်များ အပါအဝင် — ၎င်းတို့ကို လျှောက်ကြည့်ခြင်း မပြုပါ။ ထိုနေရာရှိ ပို့စ်၊ မှတ်ချက် သို့မဟုတ် အသိုင်းအဝိုင်းကို တိုင်ကြားခံရပါက တိုင်ကြားချက်ကို ကိုင်တွယ်နေစဉ်နှင့် ထို့နောက် ခဏတာ တိုင်ကြားထားသည့်အရာကို (အကြောင်းအရာ နားလည်ရန် ၎င်း၏ မှတ်ချက်များနှင့်အတူ) ကြည့်ရှုနိုင်ပါသည်။ ကြည့်ရှုမှုတိုင်းကို မှတ်တမ်းတင်ထားပြီး အဖွဲ့သည် ထိုနေရာတွင် ပို့စ်တင်၍ မရပါ။</li>
+</ul>
+<h2>၇။ Gămung Verified၊ တရားဝင်အကောင့်နှင့် Gămung အဖွဲ့</h2>
+<ul>
+<li>Gămung Verified တံဆိပ် (ဝါရောင် အမှန်ခြစ်) သည် Gămung အဖွဲ့က အကောင့်ကို စစ်ဆေးပြီးကြောင်း ဆိုလိုပါသည်။ သတ်မှတ်ကာလအထိသာ သက်တမ်းရှိပြီး ဤစည်းကမ်းချက်များကို ချိုးဖောက်ပါက ဖယ်ရှားနိုင်ပါသည်။</li>
+<li>စိမ်းပြာရောင် အမှန်ခြစ်နှင့် ဓာတ်ပုံပေါ်တွင် &quot;G&quot; တံဆိပ်ပါသည့် Gămung Team အကောင့်သည် Gămung ၏ တစ်ခုတည်းသော တရားဝင်အကောင့် ဖြစ်ပါသည်။</li>
+<li>Gămung အဖွဲ့ဝင်များတွင်လည်း သာမန် ကိုယ်ပိုင်အကောင့်များ ရှိပါသည်။ ၎င်းတို့က Gămung ကိုယ်စား လုပ်ဆောင်သည့်အခါ အက်ပ်ထဲတွင် <strong>Gămung Team</strong> သို့မဟုတ် <strong>Gămung အကူအညီ</strong> အဖြစ်သာ သင့်ထံ ရောက်ပါသည် — သင့်စကားဝှက်၊ ဝင်ရောက်ကုဒ် သို့မဟုတ် ငွေကို ကိုယ်ပိုင်စာဖြင့် ဘယ်တော့မှ မတောင်းပါ။</li>
+</ul>
+<h2>၈။ စည်းမျဉ်းများကို မည်သို့ ကျင့်သုံးသနည်း</h2>
+<ul>
+<li><strong>တိုင်ကြားခြင်း:</strong> မည်သူမဆို ပို့စ်၊ မှတ်ချက်၊ လူ၊ ကြော်ငြာ၊ အလုပ်ခေါ်စာ သို့မဟုတ် အသိုင်းအဝိုင်းကို ၎င်း၏ ⋯ မီနူးမှ တိုင်ကြားနိုင်ပါသည်။ တိုင်ကြားချက်တိုင်းကို အဖွဲ့က စစ်ဆေးပါသည်။</li>
+</ul>
+<p>ပြင်းထန်မှုနှင့် အကြိမ်အရေအတွက်ပေါ် မူတည်၍ ကျွန်ုပ်တို့ လုပ်ဆောင်နိုင်သည်များ —</p>
+<ul>
+<li>စည်းမျဉ်းချိုးဖောက်သော <strong>အကြောင်းအရာကို ဖယ်ရှားခြင်း</strong> — ချိုးဖောက်သည့် စည်းမျဉ်းပါသော အသိပေးချက် ရရှိပါမည်။</li>
+<li><strong>သတိပေးခြင်း</strong> — စည်းမျဉ်းကို ဖော်ပြသည့် အသိပေးချက်ဖြစ်ပြီး သင့်အကောင့်ကို ပုံမှန်အတိုင်း သုံးနိုင်ပါသည်။</li>
+<li><strong>ယာယီ ဆိုင်းငံ့ခြင်း</strong> — ၁ ရက်မှ ၁ နှစ်အထိ။ သင့်ထံ ပြသထားသည့် ရက်စွဲတွင် အလိုအလျောက် ပြီးဆုံးပါသည်။</li>
+<li><strong>အပြီးတိုင် ဆိုင်းငံ့ခြင်း</strong> — အဖွဲ့က ဖယ်ရှားပေးသည်အထိ။</li>
+<li>များသောအားဖြင့် တစ်ဆင့်ချင်း ဆောင်ရွက်ပါသည်။ အသက်မပြည့်သူများ ပါဝင်သော လိင်ပိုင်းဆိုင်ရာ အကြောင်းအရာ၊ လူကုန်ကူးမှု သို့မဟုတ် ခေါင်းပုံဖြတ်မှု၊ အကြမ်းဖက်ရန် အမှန်တကယ် ခြိမ်းခြောက်မှု သို့မဟုတ် ကြီးမားသော လိမ်လည်မှုကဲ့သို့ ပြင်းထန်သော အန္တရာယ်များအတွက် ချက်ချင်း အပြီးတိုင် ဆိုင်းငံ့ပြီး သက်ဆိုင်ရာ အာဏာပိုင်များထံ တိုင်ကြားနိုင်ပါသည်။</li>
+<li><strong>ဆိုင်းငံ့ခံထားရစဉ်</strong> ဝင်ရောက်ခြင်း၊ ပို့စ်/မှတ်ချက်တင်ခြင်း၊ စာပို့ခြင်း၊ စောင့်ကြည့်ခြင်း သို့မဟုတ် အလုပ်လျှောက်ခြင်း မပြုနိုင်ဘဲ သင်၏ Mart ကြော်ငြာများနှင့် အလုပ်ခေါ်စာများကို မည်သူမျှ မမြင်ရပါ။ မည်သည့်အရာကိုမျှ မဖျက်ပါ — ယာယီ ဆိုင်းငံ့မှု ပြီးဆုံးသည့်အခါ သင့်အကောင့်၊ ကြော်ငြာနှင့် အလုပ်ခေါ်စာများ မူလအတိုင်း ပြန်ပေါ်လာပါမည်။ ရှိပြီးသား ပို့စ်များ ဆက်လက် မြင်ရပါမည်။</li>
+<li><strong>မှတ်တမ်းများ:</strong> ဖယ်ရှားသည့် အကြောင်းအရာ၏ မိတ္တူနှင့် သတိပေးချက်/ဆိုင်းငံ့မှု မှတ်တမ်းများကို ကိုယ်ရေးအချက်အလက် မူဝါဒတွင် ဖော်ပြထားသည့်အတိုင်း လုံခြုံရေးနှင့် အယူခံအတွက် သိမ်းထားပါသည်။ မှားယွင်းခဲ့ပါက ဖယ်ရှားသည့် အကြောင်းအရာကို ပြန်ထားပေးနိုင်ပါသည်။</li>
+<li><strong>အယူခံခြင်း:</strong> မှားယွင်းသည်ဟု ထင်ပါက Notifications ထဲရှိ အသိပေးချက်ကို နှိပ်ပြီး <strong>အကူအညီထံ ဆက်သွယ်ရန်</strong> ကို ရွေးပါ၊ သို့မဟုတ် Gămung အကူအညီ သို့မဟုတ် <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a> သို့ စာရေးပါ။ အဖွဲ့ဝင်တစ်ဦးက ထပ်မံ စစ်ဆေးပေးပါမည်။</li>
+<li>သတိပေးချက်၊ ဖယ်ရှားမှု သို့မဟုတ် ဆိုင်းငံ့မှုကို ရှောင်ရန် အခြားအကောင့်ကို မသုံးပါနှင့် — သင်၏ အကောင့်အားလုံး အပြီးတိုင် ဆိုင်းငံ့ခံရနိုင်ပါသည်။</li>
+</ul>
+<h2>၉။ တာဝန်ယူမှု ကန့်သတ်ချက်</h2>
+<ul>
+<li>Gămung ကို &quot;ရှိသည့်အတိုင်း&quot; ပေးထားခြင်း ဖြစ်ပါသည်။ ကောင်းမွန်လုံခြုံစွာ လည်ပတ်စေရန် ကြိုးစားသော်လည်း အမြဲတမ်း အသုံးပြုနိုင်မည် သို့မဟုတ် အမှားကင်းမည်ဟု ကတိမပေးနိုင်ပါ။</li>
+<li>ဥပဒေခွင့်ပြုသလောက် အသုံးပြုသူများ တင်သည့်အရာ သို့မဟုတ် ပြုလုပ်သည့်အရာများ၊ အသုံးပြုသူများကြားရှိ ရောင်းဝယ်မှု/အလုပ်များ သို့မဟုတ် ၎င်းတို့ကြောင့် ဖြစ်ပေါ်သော ဆုံးရှုံးမှုများအတွက် ကျွန်ုပ်တို့ တာဝန်မရှိပါ။</li>
+</ul>
+<h2>၁၀။ ပြောင်းလဲမှုများ</h2>
+<p>အက်ပ်နှင့် ဤစည်းကမ်းချက်များကို ပြင်ဆင်နိုင်ပါသည်။ အရေးကြီးသော ပြောင်းလဲမှုများ ပြုလုပ်ပါက ထိပ်ရှိ ရက်စွဲကို ပြင်ဆင်ပြီး အက်ပ်ထဲတွင် အသိပေးပါမည်။ ထို့နောက် Gămung ကို ဆက်လက်အသုံးပြုပါက စည်းကမ်းချက်အသစ်များကို လက်ခံပါသည်။</p>
+<h2>၁၁။ ဆက်သွယ်ရန်</h2>
+<p>အီးမေးလ်: <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></p>
+<p>အက်ပ်ထဲတွင်: ဆက်တင်များ &gt; အကူအညီနှင့် ပံ့ပိုးမှု</p></article></main><div class="wrap narrow"><footer><div class="links"><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html"><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html"><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html"><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></div>Gămung · <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></footer></div><script>
+const pick=l=>{document.querySelectorAll('[data-lang]').forEach(e=>e.hidden=e.dataset.lang!==l);
+document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}};
+let l='en';try{l=localStorage.getItem('lang')||(navigator.language||'').startsWith('my')&&'my'||'en'}catch(e){}
+if(location.hash==='#my')l='my';if(location.hash==='#en')l='en';
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>pick(b.dataset.l));pick(l);
+</script></body></html>

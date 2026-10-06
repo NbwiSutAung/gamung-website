@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gămung Verified</title>
+<meta name="description" content="The amber tick shows people the Gămung team has checked your account.">
+<meta name="theme-color" content="#14b8a6">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="Gămung Verified">
+<meta property="og:description" content="The amber tick shows people the Gămung team has checked your account.">
+<meta property="og:image" content="assets/icon-512.png">
+<style>
+:root{--bg:#f6f8f8;--card:#fff;--text:#0f172a;--muted:#5b6474;--brand:#14b8a6;
+--brand-dark:#0f766e;--tint:#e6f7f5;--amber:#f59e0b;--amber-tint:#fdf3e1;
+--line:#e3e8ea;--shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1214;
+--card:#151c1f;--text:#e8eef0;--muted:#9aa6ad;--line:#26313a;--tint:#12312e;
+--amber-tint:#33270f;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Noto Sans Myanmar","Myanmar Text",sans-serif}
+a{color:var(--brand-dark)}
+@media (prefers-color-scheme:dark){a{color:#2dd4bf}}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;
+flex-wrap:wrap;padding:22px 0 10px}
+.logo{display:block;height:30px;width:auto}
+@media (prefers-color-scheme:dark){.logo{filter:brightness(1.15)}}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.on{color:var(--brand);font-weight:600}
+.langs{display:flex;gap:6px}
+.langs button{border:1px solid var(--line);background:var(--card);color:var(--text);
+border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.langs button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{padding:48px 0 32px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 16px;
+letter-spacing:-.02em}
+.hero p{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:640px;
+margin:0 auto 28px}
+.stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--text);
+color:var(--bg);text-decoration:none;border-radius:14px;padding:12px 20px;
+min-width:200px;justify-content:center;font-weight:600}
+.store small{display:block;font-weight:400;font-size:12px;opacity:.75;line-height:1.2}
+.store span.big{display:block;font-size:17px;line-height:1.25}
+.store.soon{background:var(--card);color:var(--muted);border:1px dashed var(--line);
+cursor:default}
+.store svg{width:26px;height:26px;flex:none;fill:currentColor}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+section{padding:32px 0}
+h2.sec{font-size:clamp(22px,3.6vw,30px);margin:0 0 8px;text-align:center}
+p.sec{color:var(--muted);text-align:center;margin:0 auto 28px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--tint);
+display:grid;place-items:center;color:var(--brand)}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;
+stroke-linecap:round;stroke-linejoin:round}
+.band{background:var(--amber-tint);border:1px solid rgba(245,158,11,.35);
+border-radius:24px;padding:28px;display:flex;gap:20px;align-items:center;
+flex-wrap:wrap;justify-content:space-between}
+.band h3{margin:0 0 4px;font-size:20px}
+.band p{margin:0;color:var(--muted)}
+.tick{width:48px;height:48px;flex:none;color:var(--amber)}
+.btn{display:inline-block;background:var(--brand);color:#fff!important;
+text-decoration:none;border-radius:999px;padding:11px 22px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--brand-dark)!important;
+border:1.5px solid var(--brand)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+margin:8px 0 8px}
+.plan{text-align:center;position:relative}
+.plan .len{color:var(--muted);font-weight:600}
+.plan .price{font-size:34px;font-weight:800;margin:6px 0 2px;letter-spacing:-.01em}
+.plan .per{color:var(--muted);font-size:14px}
+.plan.best{border:2px solid var(--amber)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+background:var(--amber);color:#fff;border-radius:999px;padding:2px 12px;
+font-size:13px;font-weight:700;white-space:nowrap}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:16px 16px 16px 60px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;
+width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--brand);
+display:grid;place-items:center;font-weight:700}
+ul.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.ticks li{padding-left:30px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:.45em;width:14px;
+height:8px;border-left:2.5px solid var(--brand);border-bottom:2.5px solid var(--brand);
+transform:rotate(-45deg)}
+article{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:28px 24px;margin:8px 0 24px}
+article h1{margin:0 0 4px;font-size:28px;line-height:1.3}
+article h2{font-size:19px;margin:28px 0 8px}
+.date{color:var(--muted);font-size:14px;margin:0 0 12px}
+article ul{padding-left:22px;margin:8px 0}article li{margin:6px 0}
+.brandline{font-weight:800;font-size:22px;color:var(--brand)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;
+color:var(--muted);font-size:14px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:8px}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+@media (max-width:520px){.store{min-width:0;width:100%}.band{padding:22px}
+article{padding:22px 18px}}
+</style></head><body><div class="wrap"><header><a href="index.html" aria-label="Gămung"><img class="logo" src="assets/wordmark.png" alt="Gămung"></a><nav><a href="index.html" class=""><span data-lang="en">Home</span><span data-lang="my" lang="my">ပင်မ</span></a><a href="verification.html" class="on"><span data-lang="en">Verified</span><span data-lang="my" lang="my">Verified</span></a><a href="support.html" class=""><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a></nav><div class="langs"><button data-l="en">English</button><button data-l="my">မြန်မာ</button></div></header></div><main class="wrap narrow"><section class="hero" style="padding-bottom:16px"><svg class="tick" style="width:64px;height:64px" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1l2.6 2.2 3.4-.4.9 3.3 3 1.7-1.2 3.2 1.2 3.2-3 1.7-.9 3.3-3.4-.4L12 23l-2.6-2.2-3.4.4-.9-3.3-3-1.7L3.3 13 2.1 9.8l3-1.7.9-3.3 3.4.4z"/><path d="M8 12.2l2.7 2.7L16.3 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><h1 data-lang="en">Gămung Verified</h1><h1 data-lang="my" lang="my">Gămung Verified</h1><p data-lang="en">The amber tick tells people the Gămung team has checked your account — for shops, employers, organisations and public figures.</p><p data-lang="my" lang="my">အဝါရောင် အမှတ်အသားသည် Gămung အဖွဲ့က သင့်အကောင့်ကို စစ်ဆေးပြီးကြောင်း ပြသပါသည် — ဆိုင်များ၊ အလုပ်ရှင်များ၊ အဖွဲ့အစည်းများနှင့် လူသိများသူများအတွက် ဖြစ်ပါသည်။</p></section><section style="padding-top:8px"><div class="card"><ul class="ticks"><li data-lang="en">The tick shows on your profile, posts, listings and jobs.</li><li data-lang="my" lang="my">သင့်ပရိုဖိုင်၊ ပို့စ်၊ ရောင်းစရာနှင့် အလုပ်ခေါ်စာများတွင် အမှတ်အသား ပြသမည်။</li><li data-lang="en">Your Mart listings and jobs appear before others.</li><li data-lang="my" lang="my">သင့် Gămung Mart ရောင်းစရာနှင့် အလုပ်ခေါ်စာများကို အခြားသူများ၏ ရှေ့တွင် ပြသမည်။</li><li data-lang="en">Buyers and job seekers know they're dealing with the real you.</li><li data-lang="my" lang="my">ဝယ်သူနှင့် အလုပ်ရှာသူများက အစစ်အမှန် သင်ဖြစ်ကြောင်း သိရှိမည်။</li></ul></div></section><section><h2 class="sec" data-lang="en">Plans</h2><h2 class="sec" data-lang="my" lang="my">အစီအစဉ်များ</h2><div class="plans"><div class="card plan"><div class="len"><span data-lang="en">6 months</span><span data-lang="my" lang="my">6 လ</span></div><div class="price"><span data-lang="en">19,000 Ks</span><span data-lang="my" lang="my">19,000 ကျပ်</span></div><div class="per"><span data-lang="en">about 3,200 Ks a month</span><span data-lang="my" lang="my">တစ်လလျှင် 3,200 ကျပ် ခန့်</span></div></div><div class="card plan best"><span class="badge"><span data-lang="en">Best value</span><span data-lang="my" lang="my">အတန်ဆုံး</span></span><div class="len"><span data-lang="en">12 months</span><span data-lang="my" lang="my">12 လ</span></div><div class="price"><span data-lang="en">36,000 Ks</span><span data-lang="my" lang="my">36,000 ကျပ်</span></div><div class="per"><span data-lang="en">about 3,000 Ks a month</span><span data-lang="my" lang="my">တစ်လလျှင် 3,000 ကျပ် ခန့်</span></div></div></div><p class="note" style="text-align:center" data-lang="en">The badge lasts for the plan you choose. Renew any time to keep it.</p><p class="note" style="text-align:center" data-lang="my" lang="my">ရွေးချယ်ထားသော အစီအစဉ်ကာလအတွင်း အမှတ်အသား ရှိနေမည်။ ဆက်လက်ထားလိုပါက အချိန်မရွေး သက်တမ်းတိုးနိုင်ပါသည်။</p></section><section><h2 class="sec" data-lang="en">How to apply</h2><h2 class="sec" data-lang="my" lang="my">လျှောက်ထားနည်း</h2><ol class="steps"><li data-lang="en">Email <a href="mailto:gamung.app@gmail.com?subject=Gămung%20Verified">gamung.app@gmail.com</a> with your Gămung profile link and what the account is for.</li><li data-lang="my" lang="my">သင့် Gămung ပရိုဖိုင် လင့်ခ်နှင့် အကောင့်၏ ရည်ရွယ်ချက်ကို <a href="mailto:gamung.app@gmail.com?subject=Gămung%20Verified">gamung.app@gmail.com</a> သို့ အီးမေးလ် ပို့ပါ။</li><li data-lang="en">We check the account and reply with how to pay.</li><li data-lang="my" lang="my">ကျွန်ုပ်တို့က အကောင့်ကို စစ်ဆေးပြီး ငွေပေးချေနည်းကို ပြန်လည် အကြောင်းကြားပါမည်။</li><li data-lang="en">Once you've paid, we turn on your badge — usually within a few days.</li><li data-lang="my" lang="my">ငွေပေးချေပြီးနောက် အမှတ်အသားကို ဖွင့်ပေးပါမည် — များသောအားဖြင့် ရက်အနည်းငယ်အတွင်း ဖြစ်ပါသည်။</li></ol><p class="note" data-lang="en">We can remove the badge if the account breaks our <a href="terms.html">Terms of Use</a>.</p><p class="note" data-lang="my" lang="my">အကောင့်က <a href="terms.html">အသုံးပြုမှု စည်းကမ်းချက်များ</a>ကို ချိုးဖောက်ပါက အမှတ်အသားကို ဖယ်ရှားနိုင်ပါသည်။</p></section></main><div class="wrap"><footer><div class="links"><a href="verification.html"><span data-lang="en">Gămung Verified</span><span data-lang="my" lang="my">Gămung Verified</span></a><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html"><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html"><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html"><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></div>Gămung · <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></footer></div><script>
+const pick=l=>{document.querySelectorAll('[data-lang]').forEach(e=>e.hidden=e.dataset.lang!==l);
+document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}};
+let l='en';try{l=localStorage.getItem('lang')||(navigator.language||'').startsWith('my')&&'my'||'en'}catch(e){}
+if(location.hash==='#my')l='my';if(location.hash==='#en')l='en';
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>pick(b.dataset.l));pick(l);
+</script></body></html>

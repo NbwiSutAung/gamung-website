@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gămung · Privacy Policy</title>
+<meta name="description" content="Gămung Privacy Policy">
+<meta name="theme-color" content="#14b8a6">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="Gămung · Privacy Policy">
+<meta property="og:description" content="Gămung Privacy Policy">
+<meta property="og:image" content="assets/icon-512.png">
+<style>
+:root{--bg:#f6f8f8;--card:#fff;--text:#0f172a;--muted:#5b6474;--brand:#14b8a6;
+--brand-dark:#0f766e;--tint:#e6f7f5;--amber:#f59e0b;--amber-tint:#fdf3e1;
+--line:#e3e8ea;--shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1214;
+--card:#151c1f;--text:#e8eef0;--muted:#9aa6ad;--line:#26313a;--tint:#12312e;
+--amber-tint:#33270f;--shadow:none}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Noto Sans Myanmar","Myanmar Text",sans-serif}
+a{color:var(--brand-dark)}
+@media (prefers-color-scheme:dark){a{color:#2dd4bf}}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;
+flex-wrap:wrap;padding:22px 0 10px}
+.logo{display:block;height:30px;width:auto}
+@media (prefers-color-scheme:dark){.logo{filter:brightness(1.15)}}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.on{color:var(--brand);font-weight:600}
+.langs{display:flex;gap:6px}
+.langs button{border:1px solid var(--line);background:var(--card);color:var(--text);
+border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.langs button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{padding:48px 0 32px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 16px;
+letter-spacing:-.02em}
+.hero p{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:640px;
+margin:0 auto 28px}
+.stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--text);
+color:var(--bg);text-decoration:none;border-radius:14px;padding:12px 20px;
+min-width:200px;justify-content:center;font-weight:600}
+.store small{display:block;font-weight:400;font-size:12px;opacity:.75;line-height:1.2}
+.store span.big{display:block;font-size:17px;line-height:1.25}
+.store.soon{background:var(--card);color:var(--muted);border:1px dashed var(--line);
+cursor:default}
+.store svg{width:26px;height:26px;flex:none;fill:currentColor}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+section{padding:32px 0}
+h2.sec{font-size:clamp(22px,3.6vw,30px);margin:0 0 8px;text-align:center}
+p.sec{color:var(--muted);text-align:center;margin:0 auto 28px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--tint);
+display:grid;place-items:center;color:var(--brand)}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;
+stroke-linecap:round;stroke-linejoin:round}
+.band{background:var(--amber-tint);border:1px solid rgba(245,158,11,.35);
+border-radius:24px;padding:28px;display:flex;gap:20px;align-items:center;
+flex-wrap:wrap;justify-content:space-between}
+.band h3{margin:0 0 4px;font-size:20px}
+.band p{margin:0;color:var(--muted)}
+.tick{width:48px;height:48px;flex:none;color:var(--amber)}
+.btn{display:inline-block;background:var(--brand);color:#fff!important;
+text-decoration:none;border-radius:999px;padding:11px 22px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--brand-dark)!important;
+border:1.5px solid var(--brand)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+margin:8px 0 8px}
+.plan{text-align:center;position:relative}
+.plan .len{color:var(--muted);font-weight:600}
+.plan .price{font-size:34px;font-weight:800;margin:6px 0 2px;letter-spacing:-.01em}
+.plan .per{color:var(--muted);font-size:14px}
+.plan.best{border:2px solid var(--amber)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+background:var(--amber);color:#fff;border-radius:999px;padding:2px 12px;
+font-size:13px;font-weight:700;white-space:nowrap}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:16px 16px 16px 60px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;
+width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--brand);
+display:grid;place-items:center;font-weight:700}
+ul.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.ticks li{padding-left:30px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:.45em;width:14px;
+height:8px;border-left:2.5px solid var(--brand);border-bottom:2.5px solid var(--brand);
+transform:rotate(-45deg)}
+article{background:var(--card);border:1px solid var(--line);border-radius:20px;
+padding:28px 24px;margin:8px 0 24px}
+article h1{margin:0 0 4px;font-size:28px;line-height:1.3}
+article h2{font-size:19px;margin:28px 0 8px}
+.date{color:var(--muted);font-size:14px;margin:0 0 12px}
+article ul{padding-left:22px;margin:8px 0}article li{margin:6px 0}
+.brandline{font-weight:800;font-size:22px;color:var(--brand)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;
+color:var(--muted);font-size:14px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:8px}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+@media (max-width:520px){.store{min-width:0;width:100%}.band{padding:22px}
+article{padding:22px 18px}}
+</style></head><body><div class="wrap narrow"><header><img class="logo" src="assets/wordmark.png" alt="Gămung"><nav><a href="privacy.html" class="on"><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html" class=""><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html" class=""><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html" class=""><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></nav><div class="langs"><button data-l="en">English</button><button data-l="my">မြန်မာ</button></div></header></div><main class="wrap narrow"><article data-lang="en" lang="en"><h1>Privacy Policy</h1>
+<p class="date">Effective: 5 October 2026</p>
+<p>This policy explains what information Gămung collects, how we use it, who we share it with, and the choices you have. &quot;Gămung&quot;, &quot;we&quot; and &quot;us&quot; mean the team that runs the Gămung app. If you have a question, write to <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a> or use Help &amp; Support in the app.</p>
+<h2>The short version</h2>
+<ul>
+<li>We collect what you give us (your profile, posts, listings, messages) and a little technical information needed to run the app.</li>
+<li>We don&#x27;t sell your information and we don&#x27;t show ads.</li>
+<li>We don&#x27;t use analytics or tracking tools, and we don&#x27;t use your phone&#x27;s GPS. Your location is the township you choose.</li>
+<li>Your birth date, gender and interests are private. Other people never see them.</li>
+<li>You can delete your account at any time from Settings, and most of your information is deleted with it right away.</li>
+</ul>
+<h2>Information you give us</h2>
+<ul>
+<li><strong>Account:</strong> your email address, or your Google or Apple sign-in, and a password if you use one.</li>
+<li><strong>Profile:</strong> your name, photo, bio, any links you add (website or social accounts) and the location you choose (state, township). You can make your account private.</li>
+<li><strong>Private details:</strong> your birth date, gender and interests. We ask for your birth date to check your age (see &quot;Children and age limits&quot;). These are never shown on your profile.</li>
+<li><strong>What you post:</strong> posts, photos, comments, polls, shares, reactions and votes; communities you create or join.</li>
+<li><strong>Gămung Mart and Gămung Jobs:</strong> items you sell, jobs you post, and job applications you send, including any résumé (PDF) you attach.</li>
+<li><strong>Messages:</strong> your chats with other users, including photos and the posts, jobs or listings you share in them.</li>
+<li><strong>Support:</strong> messages you send to Gămung Support and the details that come with them (topic, app version, phone type).</li>
+<li><strong>Reports:</strong> what you report and why.</li>
+</ul>
+<h2>Information collected automatically</h2>
+<ul>
+<li><strong>Notifications:</strong> if you allow notifications, a device token so we can send them, and your app language.</li>
+<li><strong>Activity status:</strong> when you were last active, shown to people you message with. You can turn this off in Settings &gt; Privacy (this also hides others&#x27; status from you).</li>
+<li><strong>Basic records:</strong> when things were created or changed, and records our servers keep to run securely (for example, sign-in sessions).</li>
+</ul>
+<p>We do not collect your contacts, your precise location, or your browsing outside the app.</p>
+<h2>How we use information</h2>
+<ul>
+<li>To run the app: show your profile and posts, deliver messages, run Mart, Jobs and communities.</li>
+<li>To show what&#x27;s relevant: for example, jobs, items and communities near the location you chose appear first, and listings from Gămung Verified accounts appear before others.</li>
+<li>To keep Gămung safe: check ages for age-limited features, review reports, remove content that breaks our rules, stop scams and harassment, and suspend accounts when needed.</li>
+<li>To support you: answer your messages and tell you about important changes to your account.</li>
+<li>To send notifications you&#x27;ve allowed, such as new messages or job application updates.</li>
+</ul>
+<h2>What other people can see</h2>
+<ul>
+<li><strong>Public by default:</strong> your name, photo, bio, profile links, location, followers count, posts in public communities, your Mart listings and jobs.</li>
+<li><strong>Private account:</strong> only approved followers see your profile posts. Your listings and jobs stay public so buyers and job seekers can find them.</li>
+<li><strong>Private communities:</strong> only members see posts inside them. <strong>Exception:</strong> when a post, comment or community in a private community is reported, the Gămung safety team can view what was reported (with its comments, for context) — only while the report is being handled and for a short time after — to investigate scams, harassment or other rule-breaking. The team does this without joining, cannot post there, and every such view is recorded.</li>
+<li><strong>Anonymous posts and comments:</strong> other users don&#x27;t see who wrote them, but they are still linked to your account. The Gămung team can see who wrote them when looking into a report or a rule violation.</li>
+<li><strong>Job applications:</strong> the person who posted the job sees your application and résumé. Résumés are stored privately and opened only through short-lived links.</li>
+<li><strong>Messages:</strong> only you and the person you&#x27;re chatting with see your messages in the app. Messages are stored on our servers and are not end-to-end encrypted. We don&#x27;t read your messages as a routine; authorised team members may look at them only to investigate a report, to protect someone&#x27;s safety, or when the law requires it. Photos sent in messages are stored at hard-to-guess links; anyone who is given such a link can open it, so only send photos you&#x27;re comfortable with.</li>
+</ul>
+<h2>Who we share information with</h2>
+<p>We share information only as needed to run Gămung:</p>
+<ul>
+<li><strong>Supabase:</strong> hosts our database, file storage and sign-in. Our servers are located in India (Mumbai).</li>
+<li><strong>Google Firebase Cloud Messaging and Apple Push Notification service:</strong> deliver notifications to your phone.</li>
+<li><strong>Google and Apple:</strong> if you choose to sign in with them, they confirm your identity to us. We don&#x27;t get your Google or Apple password.</li>
+<li><strong>Google Workspace (Gmail and Google Sheets):</strong> our team uses Gmail to reply by email and keeps a copy of support messages in a private Google Sheet to manage them.</li>
+<li><strong>Google Fonts:</strong> the app may download its fonts from Google&#x27;s servers.</li>
+<li><strong>The law:</strong> we may share information if we&#x27;re legally required to, or if it&#x27;s necessary to protect someone from serious harm.</li>
+</ul>
+<p>We don&#x27;t sell or rent your information, and we don&#x27;t share it with advertisers.</p>
+<h2>How long we keep information</h2>
+<ul>
+<li><strong>While your account exists:</strong> we keep your information until you delete it or delete your account.</li>
+<li><strong>When you delete your account:</strong> your profile, posts, comments, listings, jobs, applications, messages and uploaded files are deleted right away. Communities you own alone are deleted too; communities with other members must be handed to someone else first.</li>
+<li><strong>What we keep after deletion:</strong> to keep the community safe and meet legal duties, we may keep: copies of content our team removed for breaking the rules (kept as evidence, with the reason); reports and the team&#x27;s moderation records; and copies of your support messages and our replies (in our support Sheet and email). We keep these only as long as they&#x27;re needed for safety or legal reasons.</li>
+</ul>
+<h2>Children and age limits</h2>
+<ul>
+<li>You must be at least 13 to use Gămung. If we learn that someone under 13 has an account, we&#x27;ll delete it.</li>
+<li>Selling in Gămung Mart, posting jobs and applying to jobs are for people 18 and over.</li>
+<li>Your birth date can&#x27;t be changed after you set it. If it&#x27;s wrong, contact Gămung Support.</li>
+</ul>
+<h2>Your choices and rights</h2>
+<ul>
+<li><strong>See and edit:</strong> you can view and change your profile and private details in the app.</li>
+<li><strong>Delete:</strong> delete posts, comments, listings and jobs at any time, or your whole account from Settings &gt; Account &amp; Security.</li>
+<li><strong>Privacy controls:</strong> make your account private, hide your activity status, block people, and mute notifications.</li>
+<li><strong>Get a copy or ask a question:</strong> write to <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a> and we&#x27;ll help.</li>
+</ul>
+<p>If you live in the European Union or the UK, you also have the right to access, correct, delete, restrict or object to the use of your information, to receive a copy in a portable form, and to complain to your data protection authority. We use your information to provide the service you asked for (contract), to keep Gămung safe and prevent fraud (legitimate interests), to meet legal duties, and with your consent where we ask for it (for example, notifications).</p>
+<h2>Security</h2>
+<p>We use encrypted connections, access rules that limit who can see what, and private storage for sensitive files such as résumés. No system is perfectly secure, so please use a strong password and don&#x27;t share sign-in codes. <strong>Gămung will never ask for your password, sign-in codes or a payment in a message.</strong></p>
+<h2>Changes to this policy</h2>
+<p>If we make important changes, we&#x27;ll update the date at the top and tell you in the app.</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></p>
+<p>In the app: Settings &gt; Help &amp; Support</p></article><article data-lang="my" lang="my"><h1>ကိုယ်ရေးအချက်အလက် မူဝါဒ</h1>
+<p class="date">အကျိုးသက်ရောက်သည့်ရက်: ၂၀၂၆ ခုနှစ် အောက်တိုဘာ ၅ ရက်</p>
+<p>ဤမူဝါဒသည် Gămung က မည်သည့်အချက်အလက်များကို စုဆောင်းသည်၊ မည်သို့ အသုံးပြုသည်၊ မည်သူနှင့် မျှဝေသည်နှင့် သင်ရွေးချယ်နိုင်သည်များကို ရှင်းပြထားပါသည်။ &quot;Gămung&quot;၊ &quot;ကျွန်ုပ်တို့&quot; ဟူသည် Gămung အက်ပ်ကို လည်ပတ်သည့် အဖွဲ့ကို ဆိုလိုပါသည်။ မေးလိုသည်များရှိပါက <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a> သို့ စာပို့ပါ သို့မဟုတ် အက်ပ်ထဲရှိ အကူအညီနှင့် ပံ့ပိုးမှု ကို အသုံးပြုပါ။</p>
+<h2>အတိုချုပ်</h2>
+<ul>
+<li>သင်ပေးသည့် အချက်အလက်များ (ပရိုဖိုင်၊ ပို့စ်၊ ကြော်ငြာ၊ မက်ဆေ့) နှင့် အက်ပ်လည်ပတ်ရန် လိုအပ်သော နည်းပညာအချက်အလက် အနည်းငယ်ကိုသာ စုဆောင်းပါသည်။</li>
+<li>သင်၏ အချက်အလက်များကို မရောင်းချပါ၊ ကြော်ငြာများလည်း မပြပါ။</li>
+<li>Analytics နှင့် ခြေရာခံကိရိယာများ မသုံးပါ၊ ဖုန်း၏ GPS ကိုလည်း မသုံးပါ။ သင်၏တည်နေရာမှာ သင်ကိုယ်တိုင်ရွေးသည့် မြို့နယ်ဖြစ်ပါသည်။</li>
+<li>မွေးသက္ကရာဇ်၊ ကျား/မ နှင့် စိတ်ဝင်စားမှုများမှာ သီးသန့်ဖြစ်ပြီး အခြားသူများ ဘယ်တော့မှ မမြင်ရပါ။</li>
+<li>ဆက်တင်များမှ သင့်အကောင့်ကို အချိန်မရွေး ဖျက်နိုင်ပြီး အချက်အလက် အများစုကို ချက်ချင်း ဖျက်ပစ်ပါသည်။</li>
+</ul>
+<h2>သင်ပေးသည့် အချက်အလက်များ</h2>
+<ul>
+<li><strong>အကောင့်:</strong> သင်၏ အီးမေးလ်လိပ်စာ သို့မဟုတ် Google / Apple ဖြင့် ဝင်ရောက်မှု၊ စကားဝှက်သုံးပါက စကားဝှက်။</li>
+<li><strong>ပရိုဖိုင်:</strong> အမည်၊ ဓာတ်ပုံ၊ ကိုယ်ရေးအကျဉ်း၊ သင်ထည့်သည့် လင့်ခ်များ (ဝက်ဘ်ဆိုက် သို့မဟုတ် ဆိုရှယ်မီဒီယာ အကောင့်) နှင့် သင်ရွေးသည့် တည်နေရာ (ပြည်နယ်/တိုင်း၊ မြို့နယ်)။ အကောင့်ကို သီးသန့်ပြုလုပ်နိုင်ပါသည်။</li>
+<li><strong>သီးသန့်အချက်အလက်:</strong> မွေးသက္ကရာဇ်၊ ကျား/မ နှင့် စိတ်ဝင်စားမှုများ။ မွေးသက္ကရာဇ်ကို အသက်စစ်ဆေးရန် မေးပါသည် (&quot;ကလေးများနှင့် အသက်ကန့်သတ်ချက်&quot; ကိုကြည့်ပါ)။ ၎င်းတို့ကို ပရိုဖိုင်တွင် ဘယ်တော့မှ မပြပါ။</li>
+<li><strong>သင်တင်သည်များ:</strong> ပို့စ်၊ ဓာတ်ပုံ၊ မှတ်ချက်၊ မဲစာရင်း၊ မျှဝေမှု၊ တုံ့ပြန်မှုနှင့် မဲပေးမှုများ၊ သင်ဖန်တီးသည့် သို့မဟုတ် ပါဝင်သည့် အသိုင်းအဝိုင်းများ။</li>
+<li><strong>Gămung Mart နှင့် Gămung Jobs:</strong> သင်ရောင်းသည့် ပစ္စည်းများ၊ တင်သည့် အလုပ်ခေါ်စာများနှင့် ပို့သည့် အလုပ်လျှောက်လွှာများ (ပူးတွဲသည့် ကိုယ်ရေးရာဇဝင် PDF အပါအဝင်)။</li>
+<li><strong>မက်ဆေ့များ:</strong> အခြားအသုံးပြုသူများနှင့် ချတ်များ၊ ဓာတ်ပုံများနှင့် ချတ်ထဲတွင် မျှဝေသည့် ပို့စ်၊ အလုပ်၊ ကြော်ငြာများ။</li>
+<li><strong>ပံ့ပိုးမှု:</strong> Gămung Support သို့ ပို့သည့် မက်ဆေ့များနှင့် ၎င်းနှင့်အတူပါသည့် အချက်များ (အကြောင်းအရာ၊ အက်ပ်ဗားရှင်း၊ ဖုန်းအမျိုးအစား)။</li>
+<li><strong>တိုင်ကြားချက်များ:</strong> သင်တိုင်ကြားသည့်အရာနှင့် အကြောင်းရင်း။</li>
+</ul>
+<h2>အလိုအလျောက် စုဆောင်းသည့် အချက်အလက်များ</h2>
+<ul>
+<li><strong>အသိပေးချက်များ:</strong> အသိပေးချက်ကို ခွင့်ပြုပါက ပို့နိုင်ရန် device token နှင့် အက်ပ်ဘာသာစကား။</li>
+<li><strong>လှုပ်ရှားမှု အခြေအနေ:</strong> သင်နောက်ဆုံး အသုံးပြုခဲ့သည့်အချိန်ကို သင်မက်ဆေ့ပို့သူများ မြင်ရပါသည်။ ဆက်တင်များ &gt; ကိုယ်ရေးလုံခြုံမှု တွင် ပိတ်နိုင်ပါသည် (ပိတ်ပါက အခြားသူများ၏ အခြေအနေကိုလည်း သင်မမြင်ရတော့ပါ)။</li>
+<li><strong>အခြေခံမှတ်တမ်းများ:</strong> အရာများ ဖန်တီး/ပြင်ဆင်သည့်အချိန်နှင့် ဆာဗာများ လုံခြုံစွာ လည်ပတ်ရန် လိုအပ်သော မှတ်တမ်းများ (ဥပမာ ဝင်ရောက်မှု session)။</li>
+</ul>
+<p>သင်၏ အဆက်အသွယ်စာရင်း၊ တိကျသော တည်နေရာ သို့မဟုတ် အက်ပ်ပြင်ပ ဝဘ်ကြည့်ရှုမှုကို မစုဆောင်းပါ။</p>
+<h2>အချက်အလက်များကို မည်သို့ အသုံးပြုသနည်း</h2>
+<ul>
+<li>အက်ပ်လည်ပတ်ရန်: ပရိုဖိုင်နှင့် ပို့စ်များပြရန်၊ မက်ဆေ့ပို့ရန်၊ Mart၊ Jobs နှင့် အသိုင်းအဝိုင်းများ လည်ပတ်ရန်။</li>
+<li>သင်နှင့် သက်ဆိုင်သည်ကို ပြရန်: ဥပမာ သင်ရွေးသည့် တည်နေရာအနီးရှိ အလုပ်၊ ပစ္စည်းနှင့် အသိုင်းအဝိုင်းများကို ဦးစွာပြပြီး Gămung Verified အကောင့်များ၏ ကြော်ငြာများကို အခြားများထက် ရှေ့တွင်ပြပါသည်။</li>
+<li>Gămung ကို လုံခြုံစေရန်: အသက်ကန့်သတ်ထားသည့် လုပ်ဆောင်ချက်များအတွက် အသက်စစ်ရန်၊ တိုင်ကြားချက်များ စစ်ဆေးရန်၊ စည်းမျဉ်းချိုးဖောက်သည့် အကြောင်းအရာများ ဖယ်ရှားရန်၊ လိမ်လည်မှုနှင့် နှောင့်ယှက်မှုများ တားဆီးရန်နှင့် လိုအပ်ပါက အကောင့်များ ဆိုင်းငံ့ရန်။</li>
+<li>သင့်ကို ကူညီရန်: သင်၏ မက်ဆေ့များကို ပြန်ဖြေရန်နှင့် အကောင့်ဆိုင်ရာ အရေးကြီးပြောင်းလဲမှုများ အသိပေးရန်။</li>
+<li>သင်ခွင့်ပြုထားသော အသိပေးချက်များ ပို့ရန် (ဥပမာ မက်ဆေ့အသစ်၊ အလုပ်လျှောက်လွှာ အခြေအနေ)။</li>
+</ul>
+<h2>အခြားသူများ မြင်ရသည်များ</h2>
+<ul>
+<li><strong>ပုံမှန်အားဖြင့် အများမြင်:</strong> အမည်၊ ဓာတ်ပုံ၊ ကိုယ်ရေးအကျဉ်း၊ ပရိုဖိုင် လင့်ခ်များ၊ တည်နေရာ၊ စောင့်ကြည့်သူအရေအတွက်၊ အများသုံး အသိုင်းအဝိုင်းများရှိ ပို့စ်များ၊ Mart ကြော်ငြာများနှင့် အလုပ်ခေါ်စာများ။</li>
+<li><strong>သီးသန့်အကောင့်:</strong> သင်ခွင့်ပြုထားသော စောင့်ကြည့်သူများသာ ပရိုဖိုင်ပို့စ်များကို မြင်ရပါသည်။ ဝယ်သူနှင့် အလုပ်ရှာသူများ ရှာတွေ့နိုင်ရန် ကြော်ငြာနှင့် အလုပ်ခေါ်စာများမှာ အများမြင် ဆက်ရှိပါသည်။</li>
+<li><strong>သီးသန့် အသိုင်းအဝိုင်းများ:</strong> အဖွဲ့ဝင်များသာ အထဲရှိ ပို့စ်များကို မြင်ရပါသည်။ <strong>ခြွင်းချက်:</strong> သီးသန့်အသိုင်းအဝိုင်းထဲရှိ ပို့စ်၊ မှတ်ချက် သို့မဟုတ် အသိုင်းအဝိုင်းကို တိုင်ကြားခံရပါက လိမ်လည်မှု၊ နှောင့်ယှက်မှု သို့မဟုတ် အခြားစည်းမျဉ်းချိုးဖောက်မှုများကို စုံစမ်းရန် Gămung လုံခြုံရေးအဖွဲ့က တိုင်ကြားထားသည့်အရာကို (အကြောင်းအရာ နားလည်ရန် ၎င်း၏ မှတ်ချက်များနှင့်အတူ) တိုင်ကြားချက်ကို ကိုင်တွယ်နေစဉ်နှင့် ထို့နောက် ခဏတာသာ ကြည့်ရှုနိုင်ပါသည်။ အဖွဲ့သည် ပါဝင်ခြင်းမပြုဘဲ ကြည့်ရှုခြင်းဖြစ်ပြီး ထိုနေရာတွင် ပို့စ်တင်၍ မရပါ၊ ကြည့်ရှုမှုတိုင်းကိုလည်း မှတ်တမ်းတင်ထားပါသည်။</li>
+<li><strong>အမည်မဖော်သော ပို့စ်နှင့် မှတ်ချက်များ:</strong> အခြားအသုံးပြုသူများက ရေးသူကို မမြင်ရသော်လည်း သင့်အကောင့်နှင့် ချိတ်ဆက်ထားဆဲဖြစ်ပါသည်။ တိုင်ကြားချက် သို့မဟုတ် စည်းမျဉ်းချိုးဖောက်မှုကို စစ်ဆေးသည့်အခါ Gămung အဖွဲ့က ရေးသူကို မြင်နိုင်ပါသည်။</li>
+<li><strong>အလုပ်လျှောက်လွှာများ:</strong> အလုပ်တင်သူက သင်၏လျှောက်လွှာနှင့် ကိုယ်ရေးရာဇဝင်ကို မြင်ရပါသည်။ ကိုယ်ရေးရာဇဝင်များကို သီးသန့်သိမ်းဆည်းပြီး ခဏသာ အသက်ဝင်သော လင့်ခ်များဖြင့်သာ ဖွင့်နိုင်ပါသည်။</li>
+<li><strong>မက်ဆေ့များ:</strong> အက်ပ်ထဲတွင် သင်နှင့် စကားပြောနေသူသာ မက်ဆေ့များကို မြင်ရပါသည်။ မက်ဆေ့များကို ကျွန်ုပ်တို့၏ ဆာဗာများတွင် သိမ်းဆည်းထားပြီး end-to-end encryption မပါပါ။ သင့်မက်ဆေ့များကို ပုံမှန်အားဖြင့် မဖတ်ပါ။ တိုင်ကြားချက်စုံစမ်းရန်၊ တစ်စုံတစ်ယောက်၏ ဘေးကင်းရေးကို ကာကွယ်ရန် သို့မဟုတ် ဥပဒေအရ လိုအပ်သည့်အခါမှသာ ခွင့်ပြုထားသော အဖွဲ့ဝင်များက ကြည့်နိုင်ပါသည်။ မက်ဆေ့ထဲ ပို့သည့် ဓာတ်ပုံများကို ခန့်မှန်းရခက်သော လင့်ခ်များတွင် သိမ်းထားပါသည်။ ထိုလင့်ခ်ရရှိသူ မည်သူမဆို ဖွင့်ကြည့်နိုင်သဖြင့် စိတ်ချရသော ဓာတ်ပုံများကိုသာ ပို့ပါ။</li>
+</ul>
+<h2>အချက်အလက်များကို မည်သူနှင့် မျှဝေသနည်း</h2>
+<p>Gămung လည်ပတ်ရန် လိုအပ်သလောက်သာ မျှဝေပါသည်:</p>
+<ul>
+<li><strong>Supabase:</strong> ဒေတာဘေ့စ်၊ ဖိုင်သိုလှောင်မှုနှင့် အကောင့်ဝင်ရောက်မှုကို လက်ခံထားပါသည်။ ဆာဗာများမှာ အိန္ဒိယနိုင်ငံ (မွမ်ဘိုင်း) တွင် ရှိပါသည်။</li>
+<li><strong>Google Firebase Cloud Messaging နှင့် Apple Push Notification service:</strong> သင့်ဖုန်းသို့ အသိပေးချက်များ ပို့ပေးပါသည်။</li>
+<li><strong>Google နှင့် Apple:</strong> ၎င်းတို့ဖြင့် ဝင်ရောက်ရန် ရွေးပါက သင့်အထောက်အထားကို အတည်ပြုပေးပါသည်။ သင်၏ Google / Apple စကားဝှက်ကို ကျွန်ုပ်တို့ မရရှိပါ။</li>
+<li><strong>Google Workspace (Gmail နှင့် Google Sheets):</strong> အဖွဲ့က အီးမေးလ်ဖြင့် ပြန်ဖြေရန် Gmail ကိုသုံးပြီး ပံ့ပိုးမှုမက်ဆေ့များကို စီမံရန် သီးသန့် Google Sheet တွင် မိတ္တူသိမ်းပါသည်။</li>
+<li><strong>Google Fonts:</strong> အက်ပ်က ဖောင့်များကို Google ဆာဗာများမှ ဒေါင်းလုဒ်လုပ်နိုင်ပါသည်။</li>
+<li><strong>ဥပဒေ:</strong> ဥပဒေအရ လိုအပ်ပါက သို့မဟုတ် တစ်စုံတစ်ယောက်ကို ပြင်းထန်သော အန္တရာယ်မှ ကာကွယ်ရန် လိုအပ်ပါက မျှဝေနိုင်ပါသည်။</li>
+</ul>
+<p>သင့်အချက်အလက်များကို မရောင်းချ၊ မငှားရမ်းပါ၊ ကြော်ငြာသူများနှင့်လည်း မမျှဝေပါ။</p>
+<h2>အချက်အလက်များကို မည်မျှကြာ သိမ်းထားသနည်း</h2>
+<ul>
+<li><strong>အကောင့်ရှိနေစဉ်:</strong> သင်ဖျက်သည် သို့မဟုတ် အကောင့်ဖျက်သည်အထိ သိမ်းထားပါသည်။</li>
+<li><strong>အကောင့်ဖျက်သည့်အခါ:</strong> ပရိုဖိုင်၊ ပို့စ်၊ မှတ်ချက်၊ ကြော်ငြာ၊ အလုပ်ခေါ်စာ၊ လျှောက်လွှာ၊ မက်ဆေ့နှင့် တင်ထားသည့်ဖိုင်များကို ချက်ချင်းဖျက်ပါသည်။ သင်တစ်ဦးတည်း ပိုင်ဆိုင်သည့် အသိုင်းအဝိုင်းများကိုလည်း ဖျက်ပါသည်။ အခြားအဖွဲ့ဝင်များရှိသည့် အသိုင်းအဝိုင်းများကို အရင်ဆုံး အခြားသူထံ လွှဲပေးရပါမည်။</li>
+<li><strong>ဖျက်ပြီးနောက် သိမ်းထားနိုင်သည်များ:</strong> အသိုင်းအဝိုင်းကို လုံခြုံစေရန်နှင့် ဥပဒေဆိုင်ရာ တာဝန်များအတွက် အောက်ပါတို့ကို သိမ်းထားနိုင်ပါသည် — စည်းမျဉ်းချိုးဖောက်၍ အဖွဲ့က ဖယ်ရှားခဲ့သော အကြောင်းအရာများ၏ မိတ္တူ (အထောက်အထားအဖြစ်၊ အကြောင်းရင်းနှင့်အတူ)၊ တိုင်ကြားချက်များနှင့် အဖွဲ့၏ စီမံခန့်ခွဲမှု မှတ်တမ်းများ၊ ပံ့ပိုးမှုမက်ဆေ့များနှင့် ပြန်ကြားချက်များ၏ မိတ္တူ (Sheet နှင့် အီးမေးလ်တွင်)။ ဘေးကင်းရေး သို့မဟုတ် ဥပဒေအရ လိုအပ်သလောက်သာ သိမ်းထားပါသည်။</li>
+</ul>
+<h2>ကလေးများနှင့် အသက်ကန့်သတ်ချက်</h2>
+<ul>
+<li>Gămung ကိုသုံးရန် အနည်းဆုံး အသက် ၁၃ နှစ် ပြည့်ရပါမည်။ အသက် ၁၃ နှစ်အောက် အကောင့်ရှိကြောင်း သိရှိပါက ဖျက်ပါမည်။</li>
+<li>Gămung Mart တွင် ရောင်းချခြင်း၊ အလုပ်ခေါ်စာတင်ခြင်းနှင့် အလုပ်လျှောက်ခြင်းတို့မှာ အသက် ၁၈ နှစ်နှင့်အထက်အတွက်သာ ဖြစ်ပါသည်။</li>
+<li>မွေးသက္ကရာဇ်ကို တစ်ကြိမ်ထည့်ပြီးနောက် ပြောင်း၍မရပါ။ မှားနေပါက Gămung Support ကို ဆက်သွယ်ပါ။</li>
+</ul>
+<h2>သင်၏ ရွေးချယ်မှုနှင့် အခွင့်အရေးများ</h2>
+<ul>
+<li><strong>ကြည့်ရှု/ပြင်ဆင်ရန်:</strong> ပရိုဖိုင်နှင့် သီးသန့်အချက်အလက်များကို အက်ပ်ထဲတွင် ကြည့်ရှုပြင်ဆင်နိုင်ပါသည်။</li>
+<li><strong>ဖျက်ရန်:</strong> ပို့စ်၊ မှတ်ချက်၊ ကြော်ငြာနှင့် အလုပ်ခေါ်စာများကို အချိန်မရွေးဖျက်နိုင်ပြီး အကောင့်တစ်ခုလုံးကို ဆက်တင်များ &gt; အကောင့်နှင့် လုံခြုံရေး မှ ဖျက်နိုင်ပါသည်။</li>
+<li><strong>ကိုယ်ရေးလုံခြုံမှု ထိန်းချုပ်မှုများ:</strong> အကောင့်ကို သီးသန့်ပြုလုပ်ခြင်း၊ လှုပ်ရှားမှုအခြေအနေ ဖျောက်ခြင်း၊ လူများကို ပိတ်ဆို့ခြင်းနှင့် အသိပေးချက်များ ပိတ်ခြင်း ပြုလုပ်နိုင်ပါသည်။</li>
+<li><strong>မိတ္တူရယူရန် သို့မဟုတ် မေးမြန်းရန်:</strong> <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a> သို့ စာပို့ပါ၊ ကူညီပေးပါမည်။</li>
+</ul>
+<p>ဥရောပသမဂ္ဂ သို့မဟုတ် ယူကေတွင် နေထိုင်ပါက သင့်အချက်အလက်များကို ကြည့်ရှုခွင့်၊ ပြင်ဆင်ခွင့်၊ ဖျက်ခွင့်၊ ကန့်သတ်ခွင့်၊ ကန့်ကွက်ခွင့်၊ သယ်ယူနိုင်သော ပုံစံဖြင့် မိတ္တူရယူခွင့်နှင့် ဒေတာကာကွယ်ရေး အာဏာပိုင်ထံ တိုင်ကြားခွင့်တို့လည်း ရှိပါသည်။ သင်တောင်းဆိုသည့် ဝန်ဆောင်မှုပေးရန် (စာချုပ်)၊ Gămung ကို လုံခြုံစေပြီး လိမ်လည်မှုတားဆီးရန် (တရားဝင်အကျိုးစီးပွား)၊ ဥပဒေဆိုင်ရာ တာဝန်များအတွက်နှင့် ကျွန်ုပ်တို့ မေးမြန်းသည့်အခါ သင့်ခွင့်ပြုချက်ဖြင့် (ဥပမာ အသိပေးချက်များ) သင့်အချက်အလက်များကို အသုံးပြုပါသည်။</p>
+<h2>လုံခြုံရေး</h2>
+<p>စာဝှက်ထားသော ချိတ်ဆက်မှုများ၊ မည်သူ ဘာမြင်ရမည်ကို ကန့်သတ်သည့် စည်းမျဉ်းများနှင့် ကိုယ်ရေးရာဇဝင်ကဲ့သို့ အရေးကြီးဖိုင်များအတွက် သီးသန့်သိုလှောင်မှုကို အသုံးပြုပါသည်။ မည်သည့်စနစ်မျှ အပြည့်အဝ လုံခြုံသည်မဟုတ်သဖြင့် ခိုင်မာသော စကားဝှက်ကိုသုံးပြီး ဝင်ရောက်ရန်ကုဒ်များကို မမျှဝေပါနှင့်။ <strong>Gămung သည် မက်ဆေ့ထဲတွင် သင့်စကားဝှက်၊ ဝင်ရောက်ရန်ကုဒ် သို့မဟုတ် ငွေပေးချေမှုကို ဘယ်တော့မှ မတောင်းပါ။</strong></p>
+<h2>ဤမူဝါဒ ပြောင်းလဲမှုများ</h2>
+<p>အရေးကြီးသော ပြောင်းလဲမှုများ ပြုလုပ်ပါက ထိပ်ရှိ ရက်စွဲကို ပြင်ဆင်ပြီး အက်ပ်ထဲတွင် အသိပေးပါမည်။</p>
+<h2>ဆက်သွယ်ရန်</h2>
+<p>အီးမေးလ်: <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></p>
+<p>အက်ပ်ထဲတွင်: ဆက်တင်များ &gt; အကူအညီနှင့် ပံ့ပိုးမှု</p></article></main><div class="wrap narrow"><footer><div class="links"><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="my" lang="my">ကိုယ်ရေးအချက်အလက် မူဝါဒ</span></a><a href="terms.html"><span data-lang="en">Terms of Use</span><span data-lang="my" lang="my">အသုံးပြုမှု စည်းကမ်းချက်များ</span></a><a href="support.html"><span data-lang="en">Support</span><span data-lang="my" lang="my">အကူအညီ</span></a><a href="delete-account.html"><span data-lang="en">Delete account</span><span data-lang="my" lang="my">အကောင့် ဖျက်ရန်</span></a></div>Gămung · <a href="mailto:gamung.app@gmail.com">gamung.app@gmail.com</a></footer></div><script>
+const pick=l=>{document.querySelectorAll('[data-lang]').forEach(e=>e.hidden=e.dataset.lang!==l);
+document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}};
+let l='en';try{l=localStorage.getItem('lang')||(navigator.language||'').startsWith('my')&&'my'||'en'}catch(e){}
+if(location.hash==='#my')l='my';if(location.hash==='#en')l='en';
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>pick(b.dataset.l));pick(l);
+</script></body></html>
