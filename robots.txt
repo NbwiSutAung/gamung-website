@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nbwisutaung.github.io/gamung-website/sitemap.xml
