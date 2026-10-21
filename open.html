@@ -44,12 +44,23 @@ border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
 letter-spacing:-.02em}
 .hero p{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:640px;
 margin:0 auto 28px}
-.hero .greet{display:inline-block;background:var(--tint);color:var(--brand-dark);
-border-radius:20px;padding:10px 20px;margin:0 0 16px;font-weight:800;
-font-size:clamp(26px,6.6vw,44px);line-height:1.2;letter-spacing:-.015em;
-text-wrap:balance;max-width:100%}
+.hero .greet{--g1:var(--brand-dark);--g2:#0d9488;--g3:#2dd4bf;
+color:var(--brand-dark);margin:0 auto 14px;max-width:none;font-weight:800;
+font-size:clamp(28px,7vw,48px);line-height:1.15;letter-spacing:-.02em;
+text-wrap:balance;animation:greet-in .9s cubic-bezier(.2,.7,.2,1) both}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+.hero .greet{background:linear-gradient(100deg,var(--g1) 0%,var(--g2) 35%,
+var(--g3) 50%,var(--g2) 65%,var(--g1) 100%);background-size:250% 100%;
+background-position:100% 0;-webkit-background-clip:text;background-clip:text;
+color:transparent;animation:greet-in .9s cubic-bezier(.2,.7,.2,1) both,
+greet-shine 7s ease-in-out 1.2s infinite}}
+@keyframes greet-in{from{opacity:0;transform:translateY(14px)}
+to{opacity:1;transform:none}}
+@keyframes greet-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+@media (prefers-color-scheme:dark){.hero .greet{--g1:#14b8a6;--g2:#2dd4bf;
+--g3:#99f6e4;color:#2dd4bf}}
+@media (prefers-reduced-motion:reduce){.hero .greet{animation:none}}
 .hero h1.tag{font-size:clamp(18px,3.6vw,28px)}
-@media (prefers-color-scheme:dark){.hero .greet{color:#2dd4bf}}
 .nw{white-space:nowrap}
 .stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .store{display:inline-flex;align-items:center;gap:10px;background:var(--text);
