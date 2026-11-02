@@ -12,6 +12,13 @@
               "l": "?*"
             },
             "comment": "Shared Gămung links open in the app"
+          },
+          {
+            "/": "/open",
+            "?": {
+              "l": "?*"
+            },
+            "comment": "Shared Gămung links open in the app"
           }
         ]
       }
