@@ -7,7 +7,9 @@
       "namespace": "android_app",
       "package_name": "com.nbwi.gamung",
       "sha256_cert_fingerprints": [
-        "D3:6F:D3:7B:A0:F3:1F:84:1A:C1:0D:00:A4:35:4F:0D:DB:8E:5A:0A:59:E1:D8:68:A1:80:7C:8F:E0:93:E9:8F"
+        "D3:6F:D3:7B:A0:F3:1F:84:1A:C1:0D:00:A4:35:4F:0D:DB:8E:5A:0A:59:E1:D8:68:A1:80:7C:8F:E0:93:E9:8F",
+        "74:6D:25:F7:F4:AF:D2:85:77:9F:40:0C:67:F6:6C:3C:34:1F:6A:62:11:9D:05:5A:69:09:F6:29:90:2D:C5:0E",
+        "7B:23:06:B5:22:8C:FC:8E:A3:CA:29:83:28:51:15:32:DD:50:F8:17:81:D5:47:CF:DF:B8:2D:2C:86:88:9B:97"
       ]
     }
   }
